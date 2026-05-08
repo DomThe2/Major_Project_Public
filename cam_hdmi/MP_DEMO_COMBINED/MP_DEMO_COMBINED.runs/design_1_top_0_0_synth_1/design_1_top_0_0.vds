@@ -1,0 +1,418 @@
+#-----------------------------------------------------------
+# Vivado v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Thu May  7 04:38:53 2026
+# Process ID         : 33604
+# Current directory  : C:/Users/harun/Documents/MP/MP_DEMO_COMBINED/MP_DEMO_COMBINED.runs/design_1_top_0_0_synth_1
+# Command line       : vivado.exe -log design_1_top_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_top_0_0.tcl
+# Log file           : C:/Users/harun/Documents/MP/MP_DEMO_COMBINED/MP_DEMO_COMBINED.runs/design_1_top_0_0_synth_1/design_1_top_0_0.vds
+# Journal file       : C:/Users/harun/Documents/MP/MP_DEMO_COMBINED/MP_DEMO_COMBINED.runs/design_1_top_0_0_synth_1\vivado.jou
+# Running On         : harun
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : AMD Ryzen 5 5600XT 6-Core Processor            
+# CPU Frequency      : 3693 MHz
+# CPU Physical cores : 6
+# CPU Logical cores  : 12
+# Host memory        : 17101 MB
+# Swap memory        : 11385 MB
+# Total Virtual      : 28486 MB
+# Available Virtual  : 2188 MB
+#-----------------------------------------------------------
+source design_1_top_0_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:07 . Memory (MB): peak = 522.375 ; gain = 217.922
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/harun/Documents/MP/HDMI/vivado-library'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/AMDDesignTools/2025.2/Vivado/data/ip'.
+INFO: [Project 1-5698] Found the below utility IPs instantiated in block design C:/Users/harun/Documents/MP/MP_DEMO_COMBINED/MP_DEMO_COMBINED.srcs/sources_1/bd/system/system.bd which have equivalent inline hdl with improved performance and reduced diskspace.
+It is recommended to migrate these utility IPs to inline hdl  using the command upgrade_project -migrate_to_inline_hdl.  The utility IPs may be deprecated in future releases.
+More information on inline hdl is available in UG994.
+Utility IP Component Instances:
+ system_const_vcc_0
+Command: synth_design -top design_1_top_0_0 -part xc7z020clg400-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 7524
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1324.348 ; gain = 539.320
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'design_1_top_0_0' [c:/Users/harun/Documents/MP/MP_DEMO_COMBINED/MP_DEMO_COMBINED.gen/sources_1/bd/design_1/ip/design_1_top_0_0/synth/design_1_top_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'top' [C:/Users/harun/Documents/MP/MP_DEMO_SRC/hdmi/top.v:6]
+INFO: [Synth 8-6157] synthesizing module 'ODDR' [C:/AMDDesignTools/2025.2/Vivado/scripts/rt/data/unisim_comp.v:117225]
+	Parameter DDR_CLK_EDGE bound to: OPPOSITE_EDGE - type: string 
+	Parameter INIT bound to: 1'b0 
+	Parameter SRTYPE bound to: SYNC - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'ODDR' (0#1) [C:/AMDDesignTools/2025.2/Vivado/scripts/rt/data/unisim_comp.v:117225]
+INFO: [Synth 8-6157] synthesizing module 'camera_configure' [C:/Users/harun/Documents/MP/MP_DEMO_SRC/camera/camera_config.v:23]
+	Parameter CLK_FREQ bound to: 74250000 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'OV7670_config_rom' [C:/Users/harun/Documents/MP/MP_DEMO_SRC/camera/OV7670_config_list.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'OV7670_config_rom' (0#1) [C:/Users/harun/Documents/MP/MP_DEMO_SRC/camera/OV7670_config_list.v:23]
+INFO: [Synth 8-6157] synthesizing module 'OV7670_config_FSM' [C:/Users/harun/Documents/MP/MP_DEMO_SRC/camera/OV7670_config_FSM.v:23]
+	Parameter CLK_FREQ bound to: 74250000 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/harun/Documents/MP/MP_DEMO_SRC/camera/OV7670_config_FSM.v:58]
+INFO: [Synth 8-6155] done synthesizing module 'OV7670_config_FSM' (0#1) [C:/Users/harun/Documents/MP/MP_DEMO_SRC/camera/OV7670_config_FSM.v:23]
+INFO: [Synth 8-6157] synthesizing module 'SCCB_FSM_interface' [C:/Users/harun/Documents/MP/MP_DEMO_SRC/camera/SCCB_FSM_interface.v:23]
+	Parameter CLK_FREQ bound to: 74250000 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/harun/Documents/MP/MP_DEMO_SRC/camera/SCCB_FSM_interface.v:72]
+INFO: [Synth 8-6155] done synthesizing module 'SCCB_FSM_interface' (0#1) [C:/Users/harun/Documents/MP/MP_DEMO_SRC/camera/SCCB_FSM_interface.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'camera_configure' (0#1) [C:/Users/harun/Documents/MP/MP_DEMO_SRC/camera/camera_config.v:23]
+INFO: [Synth 8-6157] synthesizing module 'read_pixels' [C:/Users/harun/Documents/MP/MP_DEMO_SRC/camera/read_pixels.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/harun/Documents/MP/MP_DEMO_SRC/camera/read_pixels.v:141]
+INFO: [Synth 8-6155] done synthesizing module 'read_pixels' (0#1) [C:/Users/harun/Documents/MP/MP_DEMO_SRC/camera/read_pixels.v:23]
+INFO: [Synth 8-6157] synthesizing module 'read_pixels_axis_adapter' [C:/Users/harun/Documents/MP/MP_DEMO_SRC/hdmi/read_pixels_axis_adapter.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'read_pixels_axis_adapter' (0#1) [C:/Users/harun/Documents/MP/MP_DEMO_SRC/hdmi/read_pixels_axis_adapter.v:6]
+INFO: [Synth 8-6157] synthesizing module 'system_wrapper' [C:/Users/harun/Documents/MP/MP_DEMO_COMBINED/MP_DEMO_COMBINED.gen/sources_1/bd/system/hdl/system_wrapper.v:13]
+INFO: [Synth 8-6157] synthesizing module 'system' [c:/Users/harun/Documents/MP/MP_DEMO_COMBINED/MP_DEMO_COMBINED.gen/sources_1/bd/system/synth/system.v:13]
+INFO: [Synth 8-6157] synthesizing module 'system_axis_data_fifo_0_0' [C:/Users/harun/Documents/MP/MP_DEMO_COMBINED/MP_DEMO_COMBINED.runs/design_1_top_0_0_synth_1/.Xil/Vivado-33604-harun/realtime/system_axis_data_fifo_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'system_axis_data_fifo_0_0' (0#1) [C:/Users/harun/Documents/MP/MP_DEMO_COMBINED/MP_DEMO_COMBINED.runs/design_1_top_0_0_synth_1/.Xil/Vivado-33604-harun/realtime/system_axis_data_fifo_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'm_axis_tlast' of module 'system_axis_data_fifo_0_0' is unconnected for instance 'axis_data_fifo_0' [c:/Users/harun/Documents/MP/MP_DEMO_COMBINED/MP_DEMO_COMBINED.gen/sources_1/bd/system/synth/system.v:84]
+WARNING: [Synth 8-7071] port 'm_axis_tuser' of module 'system_axis_data_fifo_0_0' is unconnected for instance 'axis_data_fifo_0' [c:/Users/harun/Documents/MP/MP_DEMO_COMBINED/MP_DEMO_COMBINED.gen/sources_1/bd/system/synth/system.v:84]
+WARNING: [Synth 8-7023] instance 'axis_data_fifo_0' of module 'system_axis_data_fifo_0_0' has 13 connections declared, but only 11 given [c:/Users/harun/Documents/MP/MP_DEMO_COMBINED/MP_DEMO_COMBINED.gen/sources_1/bd/system/synth/system.v:84]
+INFO: [Synth 8-6157] synthesizing module 'system_clk_wiz_0_0' [C:/Users/harun/Documents/MP/MP_DEMO_COMBINED/MP_DEMO_COMBINED.runs/design_1_top_0_0_synth_1/.Xil/Vivado-33604-harun/realtime/system_clk_wiz_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'system_clk_wiz_0_0' (0#1) [C:/Users/harun/Documents/MP/MP_DEMO_COMBINED/MP_DEMO_COMBINED.runs/design_1_top_0_0_synth_1/.Xil/Vivado-33604-harun/realtime/system_clk_wiz_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'system_const_vcc_0' [c:/Users/harun/Documents/MP/MP_DEMO_COMBINED/MP_DEMO_COMBINED.gen/sources_1/bd/system/ip/system_const_vcc_0/synth/system_const_vcc_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_10_xlconstant' [c:/Users/harun/Documents/MP/MP_DEMO_COMBINED/MP_DEMO_COMBINED.gen/sources_1/bd/system/ipshared/a165/hdl/xlconstant_v1_1_vl_rfs.v:68]
+INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_10_xlconstant' (0#1) [c:/Users/harun/Documents/MP/MP_DEMO_COMBINED/MP_DEMO_COMBINED.gen/sources_1/bd/system/ipshared/a165/hdl/xlconstant_v1_1_vl_rfs.v:68]
+INFO: [Synth 8-6155] done synthesizing module 'system_const_vcc_0' (0#1) [c:/Users/harun/Documents/MP/MP_DEMO_COMBINED/MP_DEMO_COMBINED.gen/sources_1/bd/system/ip/system_const_vcc_0/synth/system_const_vcc_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'system_rgb2dvi_0_0' [C:/Users/harun/Documents/MP/MP_DEMO_COMBINED/MP_DEMO_COMBINED.runs/design_1_top_0_0_synth_1/.Xil/Vivado-33604-harun/realtime/system_rgb2dvi_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'system_rgb2dvi_0_0' (0#1) [C:/Users/harun/Documents/MP/MP_DEMO_COMBINED/MP_DEMO_COMBINED.runs/design_1_top_0_0_synth_1/.Xil/Vivado-33604-harun/realtime/system_rgb2dvi_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'system_rst_pixel_74m_0' [C:/Users/harun/Documents/MP/MP_DEMO_COMBINED/MP_DEMO_COMBINED.runs/design_1_top_0_0_synth_1/.Xil/Vivado-33604-harun/realtime/system_rst_pixel_74m_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'system_rst_pixel_74m_0' (0#1) [C:/Users/harun/Documents/MP/MP_DEMO_COMBINED/MP_DEMO_COMBINED.runs/design_1_top_0_0_synth_1/.Xil/Vivado-33604-harun/realtime/system_rst_pixel_74m_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'system_rst_pixel_74m_0' is unconnected for instance 'rst_pixel_74m' [c:/Users/harun/Documents/MP/MP_DEMO_COMBINED/MP_DEMO_COMBINED.gen/sources_1/bd/system/synth/system.v:116]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'system_rst_pixel_74m_0' is unconnected for instance 'rst_pixel_74m' [c:/Users/harun/Documents/MP/MP_DEMO_COMBINED/MP_DEMO_COMBINED.gen/sources_1/bd/system/synth/system.v:116]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'system_rst_pixel_74m_0' is unconnected for instance 'rst_pixel_74m' [c:/Users/harun/Documents/MP/MP_DEMO_COMBINED/MP_DEMO_COMBINED.gen/sources_1/bd/system/synth/system.v:116]
+WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'system_rst_pixel_74m_0' is unconnected for instance 'rst_pixel_74m' [c:/Users/harun/Documents/MP/MP_DEMO_COMBINED/MP_DEMO_COMBINED.gen/sources_1/bd/system/synth/system.v:116]
+WARNING: [Synth 8-7023] instance 'rst_pixel_74m' of module 'system_rst_pixel_74m_0' has 10 connections declared, but only 6 given [c:/Users/harun/Documents/MP/MP_DEMO_COMBINED/MP_DEMO_COMBINED.gen/sources_1/bd/system/synth/system.v:116]
+INFO: [Synth 8-6155] done synthesizing module 'system' (0#1) [c:/Users/harun/Documents/MP/MP_DEMO_COMBINED/MP_DEMO_COMBINED.gen/sources_1/bd/system/synth/system.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'system_wrapper' (0#1) [C:/Users/harun/Documents/MP/MP_DEMO_COMBINED/MP_DEMO_COMBINED.gen/sources_1/bd/system/hdl/system_wrapper.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'top' (0#1) [C:/Users/harun/Documents/MP/MP_DEMO_SRC/hdmi/top.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_top_0_0' (0#1) [c:/Users/harun/Documents/MP/MP_DEMO_COMBINED/MP_DEMO_COMBINED.gen/sources_1/bd/design_1/ip/design_1_top_0_0/synth/design_1_top_0_0.v:53]
+WARNING: [Synth 8-6014] Unused sequential element y_counter_reg was removed.  [C:/Users/harun/Documents/MP/MP_DEMO_SRC/camera/read_pixels.v:57]
+WARNING: [Synth 8-6014] Unused sequential element pixel_480_480_valid_reg was removed.  [C:/Users/harun/Documents/MP/MP_DEMO_SRC/camera/read_pixels.v:155]
+INFO: [Synth 8-7129] Port m_axis_tready in module read_pixels_axis_adapter is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1458.109 ; gain = 673.082
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1458.109 ; gain = 673.082
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1458.109 ; gain = 673.082
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 1458.109 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/harun/Documents/MP/MP_DEMO_COMBINED/MP_DEMO_COMBINED.gen/sources_1/bd/system/ip/system_clk_wiz_0_0/system_clk_wiz_0_0/system_clk_wiz_0_0_in_context.xdc] for cell 'inst/u_system/system_i/clk_wiz_0'
+Finished Parsing XDC File [c:/Users/harun/Documents/MP/MP_DEMO_COMBINED/MP_DEMO_COMBINED.gen/sources_1/bd/system/ip/system_clk_wiz_0_0/system_clk_wiz_0_0/system_clk_wiz_0_0_in_context.xdc] for cell 'inst/u_system/system_i/clk_wiz_0'
+Parsing XDC File [c:/Users/harun/Documents/MP/MP_DEMO_COMBINED/MP_DEMO_COMBINED.gen/sources_1/bd/system/ip/system_rst_pixel_74m_0/system_rst_pixel_74m_0/system_rst_pixel_74m_0_in_context.xdc] for cell 'inst/u_system/system_i/rst_pixel_74m'
+Finished Parsing XDC File [c:/Users/harun/Documents/MP/MP_DEMO_COMBINED/MP_DEMO_COMBINED.gen/sources_1/bd/system/ip/system_rst_pixel_74m_0/system_rst_pixel_74m_0/system_rst_pixel_74m_0_in_context.xdc] for cell 'inst/u_system/system_i/rst_pixel_74m'
+Parsing XDC File [c:/Users/harun/Documents/MP/MP_DEMO_COMBINED/MP_DEMO_COMBINED.gen/sources_1/bd/system/ip/system_axis_data_fifo_0_0/system_axis_data_fifo_0_0/system_axis_data_fifo_0_0_in_context.xdc] for cell 'inst/u_system/system_i/axis_data_fifo_0'
+Finished Parsing XDC File [c:/Users/harun/Documents/MP/MP_DEMO_COMBINED/MP_DEMO_COMBINED.gen/sources_1/bd/system/ip/system_axis_data_fifo_0_0/system_axis_data_fifo_0_0/system_axis_data_fifo_0_0_in_context.xdc] for cell 'inst/u_system/system_i/axis_data_fifo_0'
+Parsing XDC File [c:/Users/harun/Documents/MP/MP_DEMO_COMBINED/MP_DEMO_COMBINED.gen/sources_1/bd/system/ip/system_rgb2dvi_0_0/system_rgb2dvi_0_0/system_rgb2dvi_0_0_in_context.xdc] for cell 'inst/u_system/system_i/rgb2dvi_0'
+Finished Parsing XDC File [c:/Users/harun/Documents/MP/MP_DEMO_COMBINED/MP_DEMO_COMBINED.gen/sources_1/bd/system/ip/system_rgb2dvi_0_0/system_rgb2dvi_0_0/system_rgb2dvi_0_0_in_context.xdc] for cell 'inst/u_system/system_i/rgb2dvi_0'
+Parsing XDC File [C:/Users/harun/Documents/MP/MP_DEMO_COMBINED/MP_DEMO_COMBINED.runs/design_1_top_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/harun/Documents/MP/MP_DEMO_COMBINED/MP_DEMO_COMBINED.runs/design_1_top_0_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1527.707 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.037 . Memory (MB): peak = 1527.707 ; gain = 0.000
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1527.707 ; gain = 742.680
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1527.707 ; gain = 742.680
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1527.707 ; gain = 742.680
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'read_pixels'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+             START_FRAME |                                0 |                              000
+                READ_ROW |                                1 |                              001
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'read_pixels'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1527.707 ; gain = 742.680
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 2     
+	   2 Input   12 Bit       Adders := 1     
+	   2 Input   10 Bit       Adders := 6     
+	   3 Input   10 Bit       Adders := 1     
+	   2 Input    9 Bit       Adders := 3     
+	   2 Input    8 Bit       Adders := 3     
+	   2 Input    4 Bit       Adders := 3     
+	   2 Input    2 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 2     
+	               24 Bit    Registers := 1     
+	               16 Bit    Registers := 2     
+	               12 Bit    Registers := 1     
+	               10 Bit    Registers := 3     
+	                9 Bit    Registers := 2     
+	                8 Bit    Registers := 8     
+	                4 Bit    Registers := 5     
+	                3 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 26    
++---RAMs : 
+	             600K Bit	(76800 X 8 bit)          RAMs := 1     
++---ROMs : 
+	                    ROMs := 1     
++---Muxes : 
+	  14 Input   32 Bit        Muxes := 1     
+	   2 Input   24 Bit        Muxes := 1     
+	   3 Input   16 Bit        Muxes := 2     
+	  14 Input    8 Bit        Muxes := 1     
+	   4 Input    8 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 1     
+	  14 Input    4 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 2     
+	   4 Input    3 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 2     
+	   3 Input    2 Bit        Muxes := 1     
+	  14 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 24    
+	   4 Input    1 Bit        Muxes := 7     
+	   3 Input    1 Bit        Muxes := 5     
+	  14 Input    1 Bit        Muxes := 11    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3917] design design_1_top_0_0 has port hdmi_tx_hpd driven by constant 1
+INFO: [Synth 8-3332] Sequential element (inst/frame_buf_reg_mux_sel_a_pos_1) is unused and will be removed from module design_1_top_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/frame_buf_reg_mux_sel_a_pos_1__0) is unused and will be removed from module design_1_top_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/frame_buf_reg_mux_sel_a_pos_1__1) is unused and will be removed from module design_1_top_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/frame_buf_reg_mux_sel_a_pos_1__2) is unused and will be removed from module design_1_top_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/frame_buf_reg_mux_sel_a_pos_1__3) is unused and will be removed from module design_1_top_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/frame_buf_reg_mux_sel_a_pos_1__4) is unused and will be removed from module design_1_top_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/frame_buf_reg_mux_sel_a_pos_1__5) is unused and will be removed from module design_1_top_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/frame_buf_reg_mux_sel_a_pos_1__6) is unused and will be removed from module design_1_top_0_0.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1527.707 ; gain = 742.680
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping Report
++-----------------+---------------+---------------+----------------+
+|Module Name      | RTL Object    | Depth x Width | Implemented As | 
++-----------------+---------------+---------------+----------------+
+|camera_configure | rom1/dout_reg | 256x16        | Block RAM      | 
++-----------------+---------------+---------------+----------------+
+
+
+Block RAM: Preliminary Mapping Report (see note below)
++-----------------+--------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name      | RTL Object         | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++-----------------+--------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|design_1_top_0_0 | inst/frame_buf_reg | 75 K x 8(NO_CHANGE)    | W |   | 75 K x 8(WRITE_FIRST)  |   | R | Port A and B     | 0      | 24     | 
++-----------------+--------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1659.098 ; gain = 874.070
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 1698.648 ; gain = 913.621
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping Report
++-----------------+--------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name      | RTL Object         | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++-----------------+--------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|design_1_top_0_0 | inst/frame_buf_reg | 75 K x 8(NO_CHANGE)    | W |   | 75 K x 8(WRITE_FIRST)  |   | R | Port A and B     | 0      | 24     | 
++-----------------+--------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance inst/u_cam_config/rom1/dout_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/frame_buf_reg_1_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/frame_buf_reg_1_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/frame_buf_reg_1_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/frame_buf_reg_1_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/frame_buf_reg_1_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/frame_buf_reg_1_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/frame_buf_reg_1_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/frame_buf_reg_1_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/frame_buf_reg_1_0__0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/frame_buf_reg_1_1__0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/frame_buf_reg_1_2__0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/frame_buf_reg_1_3__0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/frame_buf_reg_1_4__0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/frame_buf_reg_1_5__0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/frame_buf_reg_1_6__0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/frame_buf_reg_1_7__0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1699.188 ; gain = 914.160
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 1924.711 ; gain = 1139.684
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 1924.711 ; gain = 1139.684
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 1924.711 ; gain = 1139.684
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 1924.711 ; gain = 1139.684
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 1924.711 ; gain = 1139.684
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 1924.711 ; gain = 1139.684
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------------------+----------+
+|      |BlackBox name             |Instances |
++------+--------------------------+----------+
+|1     |system_axis_data_fifo_0_0 |         1|
+|2     |system_clk_wiz_0_0        |         1|
+|3     |system_rgb2dvi_0_0        |         1|
+|4     |system_rst_pixel_74m_0    |         1|
++------+--------------------------+----------+
+
+Report Cell Usage: 
++------+------------------------+------+
+|      |Cell                    |Count |
++------+------------------------+------+
+|1     |system_axis_data_fifo_0 |     1|
+|2     |system_clk_wiz_0        |     1|
+|3     |system_rgb2dvi_0        |     1|
+|4     |system_rst_pixel_74m    |     1|
+|5     |CARRY4                  |    65|
+|6     |LUT1                    |    82|
+|7     |LUT2                    |    64|
+|8     |LUT3                    |    47|
+|9     |LUT4                    |    69|
+|10    |LUT5                    |    48|
+|11    |LUT6                    |    90|
+|12    |ODDR                    |     1|
+|13    |RAMB18E1                |     1|
+|14    |RAMB36E1                |    24|
+|17    |FDRE                    |   355|
+|18    |FDSE                    |     9|
++------+------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 1924.711 ; gain = 1139.684
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:23 ; elapsed = 00:00:33 . Memory (MB): peak = 1924.711 ; gain = 1070.086
+Synthesis Optimization Complete : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 1924.711 ; gain = 1139.684
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 1924.711 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 91 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1937.512 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 1b568fda
+INFO: [Common 17-83] Releasing license: Synthesis
+87 Infos, 10 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:39 ; elapsed = 00:00:44 . Memory (MB): peak = 1937.512 ; gain = 1386.254
+INFO: [Coretcl 2-1174] Renamed 13 cell refs.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1937.512 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/harun/Documents/MP/MP_DEMO_COMBINED/MP_DEMO_COMBINED.runs/design_1_top_0_0_synth_1/design_1_top_0_0.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file design_1_top_0_0_utilization_synth.rpt -pb design_1_top_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu May  7 04:39:49 2026...

@@ -1,0 +1,75 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.833333",
+   "Default View_TopLeft":"2327,78",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.8.0 2024-04-26 e1825d835c VDI=44 GEI=38 GUI=JA:21.0
+#  -string -flagsOSRD
+preplace port port-id_tx -pg 1 -lvl 6 -x 3420 -y 220 -defaultsOSRD
+preplace port port-id_rx -pg 1 -lvl 0 -x -310 -y 360 -defaultsOSRD
+preplace inst topModule_0 -pg 1 -lvl 3 -x 2580 -y 570 -defaultsOSRD
+preplace inst image_7 -pg 1 -lvl 2 -x 1940 -y -90 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 1 -x 1200 -y 500 -defaultsOSRD
+preplace inst proc_sys_reset_0 -pg 1 -lvl 2 -x 1940 -y 670 -defaultsOSRD
+preplace inst axi_datamover_0 -pg 1 -lvl 1 -x 1200 -y 730 -defaultsOSRD
+preplace inst axi_mem_intercon -pg 1 -lvl 2 -x 1940 -y 1080 -defaultsOSRD
+preplace inst xlconstant_0 -pg 1 -lvl 1 -x 1200 -y 920 -defaultsOSRD
+preplace inst axi_gpio_0 -pg 1 -lvl 3 -x 2580 -y 1060 -defaultsOSRD
+preplace inst axi_smc -pg 1 -lvl 3 -x 2580 -y 900 -defaultsOSRD
+preplace inst dense_activationA -pg 1 -lvl 5 -x 3300 -y 380 -defaultsOSRD
+preplace inst dense_activationB -pg 1 -lvl 5 -x 3300 -y 630 -defaultsOSRD
+preplace inst conv_activationA -pg 1 -lvl 4 -x 3030 -y 390 -defaultsOSRD
+preplace inst conv_activationB -pg 1 -lvl 4 -x 3030 -y 690 -defaultsOSRD
+preplace inst xlconstant_1 -pg 1 -lvl 4 -x 3030 -y 940 -defaultsOSRD
+preplace netloc activationB_douta 1 2 3 2360 1140 2920 870 3170
+preplace netloc axi_datamover_0_m_axis_mm2s_tdata 1 1 2 1760 570 2140J
+preplace netloc axi_datamover_0_m_axis_mm2s_tvalid 1 1 2 N 780 2330J
+preplace netloc axi_datamover_0_mm2s_err 1 1 1 N 800
+preplace netloc axi_datamover_0_s_axis_mm2s_cmd_tready 1 0 3 970 600 1430 560 2330J
+preplace netloc axi_gpio_0_gpio_io_o 1 2 2 2310 1170 2800
+preplace netloc blk_mem_gen_0_douta 1 2 3 2360 180 N 180 3200
+preplace netloc clk_wiz_0_clk_out 1 0 5 940 390 1750 290 2340 290 2920 240 3150
+preplace netloc conv_activationA_doutb 1 2 2 2370 300 2910
+preplace netloc conv_activationB_doutb 1 2 2 2350 1150 2900
+preplace netloc image_7_douta 1 1 2 1760 520 N
+preplace netloc proc_sys_reset_0_peripheral_aresetn 1 0 3 970 1060 1720 1200 2130
+preplace netloc proc_sys_reset_0_peripheral_reset 1 2 1 2120 480n
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 1 1 1770 540n
+preplace netloc rx_0_1 1 0 3 NJ 360 N 360 2350
+preplace netloc topModule_0_addra_A 1 3 1 2840 320n
+preplace netloc topModule_0_addra_B 1 3 1 2900 500n
+preplace netloc topModule_0_addra_activation 1 3 2 2830 210 3190
+preplace netloc topModule_0_addra_activation_B 1 3 2 2910 540 3130
+preplace netloc topModule_0_addra_image_7 1 1 3 1770 -190 N -190 2790
+preplace netloc topModule_0_addrb_A 1 3 1 N 440
+preplace netloc topModule_0_addrb_B 1 3 1 2880 520n
+preplace netloc topModule_0_axiAddress 1 0 4 960 1210 N 1210 NJ 1210 2820J
+preplace netloc topModule_0_axiCmdValid 1 0 4 950 1220 N 1220 NJ 1220 2830J
+preplace netloc topModule_0_axiReady 1 1 3 1440 770 2120J 1160 2810J
+preplace netloc topModule_0_data_write_activation 1 3 2 2860 230 3170
+preplace netloc topModule_0_data_write_activation_B 1 3 2 2850 860 3130
+preplace netloc topModule_0_dina_A 1 3 1 2890 360n
+preplace netloc topModule_0_dina_B 1 3 1 2890 540n
+preplace netloc topModule_0_ena_image_7 1 1 3 1770 10 N 10 2800
+preplace netloc topModule_0_ena_read_activation 1 3 2 2820 190 3180
+preplace netloc topModule_0_ena_read_activation_B 1 3 2 2860 840 3150
+preplace netloc topModule_0_ena_write_activation 1 3 2 2850 200 3160
+preplace netloc topModule_0_ena_write_activation_B 1 3 2 2840 850 3190
+preplace netloc topModule_0_tx 1 3 3 2810 220 N 220 N
+preplace netloc topModule_0_wea_A 1 3 1 2900 400n
+preplace netloc topModule_0_wea_B 1 3 1 2870 560n
+preplace netloc xlconstant_0_dout 1 1 1 1430 700n
+preplace netloc xlconstant_1_dout 1 3 2 2930 880 3130
+preplace netloc axi_datamover_0_M_AXI_MM2S 1 1 1 1450 660n
+preplace netloc axi_mem_intercon_M00_AXI 1 0 3 970 400 N 400 2110
+preplace netloc axi_smc_M00_AXI 1 2 2 2370 980 2790
+preplace netloc processing_system7_0_M_AXI_GP0 1 1 2 N 500 2320
+levelinfo -pg 1 -310 1200 1940 2580 3030 3300 3420
+pagesize -pg 1 -db -bbox -sgen -380 -480 3810 1560
+"
+}
+{
+   "da_axi4_cnt":"2",
+   "da_clkrst_cnt":"1",
+   "da_ps7_cnt":"1"
+}

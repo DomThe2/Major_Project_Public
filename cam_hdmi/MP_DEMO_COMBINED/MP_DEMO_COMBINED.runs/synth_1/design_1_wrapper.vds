@@ -1,0 +1,272 @@
+#-----------------------------------------------------------
+# Vivado v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Thu May  7 04:39:51 2026
+# Process ID         : 34268
+# Current directory  : C:/Users/harun/Documents/MP/MP_DEMO_COMBINED/MP_DEMO_COMBINED.runs/synth_1
+# Command line       : vivado.exe -log design_1_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_wrapper.tcl
+# Log file           : C:/Users/harun/Documents/MP/MP_DEMO_COMBINED/MP_DEMO_COMBINED.runs/synth_1/design_1_wrapper.vds
+# Journal file       : C:/Users/harun/Documents/MP/MP_DEMO_COMBINED/MP_DEMO_COMBINED.runs/synth_1\vivado.jou
+# Running On         : harun
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : AMD Ryzen 5 5600XT 6-Core Processor            
+# CPU Frequency      : 3693 MHz
+# CPU Physical cores : 6
+# CPU Logical cores  : 12
+# Host memory        : 17101 MB
+# Swap memory        : 12464 MB
+# Total Virtual      : 29565 MB
+# Available Virtual  : 3369 MB
+#-----------------------------------------------------------
+source design_1_wrapper.tcl -notrace
+create_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:07 . Memory (MB): peak = 523.812 ; gain = 221.270
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/harun/Documents/MP/HDMI/vivado-library'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/AMDDesignTools/2025.2/Vivado/data/ip'.
+Command: read_checkpoint -auto_incremental -incremental C:/Users/harun/Documents/MP/MP_DEMO_COMBINED/MP_DEMO_COMBINED.srcs/utils_1/imports/synth_1/top.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/harun/Documents/MP/MP_DEMO_COMBINED/MP_DEMO_COMBINED.srcs/utils_1/imports/synth_1/top.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top design_1_wrapper -part xc7z020clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 3988
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1321.211 ; gain = 541.086
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'design_1_wrapper' [C:/Users/harun/Documents/MP/MP_DEMO_COMBINED/MP_DEMO_COMBINED.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:13]
+INFO: [Synth 8-6157] synthesizing module 'design_1' [c:/Users/harun/Documents/MP/MP_DEMO_COMBINED/MP_DEMO_COMBINED.gen/sources_1/bd/design_1/synth/design_1.v:13]
+INFO: [Synth 8-6157] synthesizing module 'design_1_blk_mem_gen_0_0' [C:/Users/harun/Documents/MP/MP_DEMO_COMBINED/MP_DEMO_COMBINED.runs/synth_1/.Xil/Vivado-34268-harun/realtime/design_1_blk_mem_gen_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_blk_mem_gen_0_0' (0#1) [C:/Users/harun/Documents/MP/MP_DEMO_COMBINED/MP_DEMO_COMBINED.runs/synth_1/.Xil/Vivado-34268-harun/realtime/design_1_blk_mem_gen_0_0_stub.v:6]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [c:/Users/harun/Documents/MP/MP_DEMO_COMBINED/MP_DEMO_COMBINED.gen/sources_1/bd/design_1/synth/design_1.v:98]
+INFO: [Synth 8-6157] synthesizing module 'design_1_blk_mem_gen_0_1' [C:/Users/harun/Documents/MP/MP_DEMO_COMBINED/MP_DEMO_COMBINED.runs/synth_1/.Xil/Vivado-34268-harun/realtime/design_1_blk_mem_gen_0_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_blk_mem_gen_0_1' (0#1) [C:/Users/harun/Documents/MP/MP_DEMO_COMBINED/MP_DEMO_COMBINED.runs/synth_1/.Xil/Vivado-34268-harun/realtime/design_1_blk_mem_gen_0_1_stub.v:6]
+WARNING: [Synth 8-7071] port 'doutb' of module 'design_1_blk_mem_gen_0_1' is unconnected for instance 'image_7' [c:/Users/harun/Documents/MP/MP_DEMO_COMBINED/MP_DEMO_COMBINED.gen/sources_1/bd/design_1/synth/design_1.v:98]
+WARNING: [Synth 8-7023] instance 'image_7' of module 'design_1_blk_mem_gen_0_1' has 8 connections declared, but only 7 given [c:/Users/harun/Documents/MP/MP_DEMO_COMBINED/MP_DEMO_COMBINED.gen/sources_1/bd/design_1/synth/design_1.v:98]
+INFO: [Synth 8-6157] synthesizing module 'design_1_memory_writer_0_0' [C:/Users/harun/Documents/MP/MP_DEMO_COMBINED/MP_DEMO_COMBINED.runs/synth_1/.Xil/Vivado-34268-harun/realtime/design_1_memory_writer_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_memory_writer_0_0' (0#1) [C:/Users/harun/Documents/MP/MP_DEMO_COMBINED/MP_DEMO_COMBINED.runs/synth_1/.Xil/Vivado-34268-harun/realtime/design_1_memory_writer_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_rgb565_to_grayscale_8_0_0' [C:/Users/harun/Documents/MP/MP_DEMO_COMBINED/MP_DEMO_COMBINED.runs/synth_1/.Xil/Vivado-34268-harun/realtime/design_1_rgb565_to_grayscale_8_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_rgb565_to_grayscale_8_0_0' (0#1) [C:/Users/harun/Documents/MP/MP_DEMO_COMBINED/MP_DEMO_COMBINED.runs/synth_1/.Xil/Vivado-34268-harun/realtime/design_1_rgb565_to_grayscale_8_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_smoothing_0_0' [C:/Users/harun/Documents/MP/MP_DEMO_COMBINED/MP_DEMO_COMBINED.runs/synth_1/.Xil/Vivado-34268-harun/realtime/design_1_smoothing_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_smoothing_0_0' (0#1) [C:/Users/harun/Documents/MP/MP_DEMO_COMBINED/MP_DEMO_COMBINED.runs/synth_1/.Xil/Vivado-34268-harun/realtime/design_1_smoothing_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_top_0_0' [C:/Users/harun/Documents/MP/MP_DEMO_COMBINED/MP_DEMO_COMBINED.runs/synth_1/.Xil/Vivado-34268-harun/realtime/design_1_top_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_top_0_0' (0#1) [C:/Users/harun/Documents/MP/MP_DEMO_COMBINED/MP_DEMO_COMBINED.runs/synth_1/.Xil/Vivado-34268-harun/realtime/design_1_top_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'bram_read_en' of module 'design_1_top_0_0' is unconnected for instance 'top_0' [c:/Users/harun/Documents/MP/MP_DEMO_COMBINED/MP_DEMO_COMBINED.gen/sources_1/bd/design_1/synth/design_1.v:127]
+WARNING: [Synth 8-7023] instance 'top_0' of module 'design_1_top_0_0' has 27 connections declared, but only 26 given [c:/Users/harun/Documents/MP/MP_DEMO_COMBINED/MP_DEMO_COMBINED.gen/sources_1/bd/design_1/synth/design_1.v:127]
+INFO: [Synth 8-6155] done synthesizing module 'design_1' (0#1) [c:/Users/harun/Documents/MP/MP_DEMO_COMBINED/MP_DEMO_COMBINED.gen/sources_1/bd/design_1/synth/design_1.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_wrapper' (0#1) [C:/Users/harun/Documents/MP/MP_DEMO_COMBINED/MP_DEMO_COMBINED.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:13]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1445.875 ; gain = 665.750
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1445.875 ; gain = 665.750
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1445.875 ; gain = 665.750
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1445.875 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/harun/Documents/MP/MP_DEMO_COMBINED/MP_DEMO_COMBINED.gen/sources_1/bd/design_1/ip/design_1_top_0_0/design_1_top_0_0/design_1_top_0_0_in_context.xdc] for cell 'design_1_i/top_0'
+Finished Parsing XDC File [c:/Users/harun/Documents/MP/MP_DEMO_COMBINED/MP_DEMO_COMBINED.gen/sources_1/bd/design_1/ip/design_1_top_0_0/design_1_top_0_0/design_1_top_0_0_in_context.xdc] for cell 'design_1_i/top_0'
+Parsing XDC File [c:/Users/harun/Documents/MP/MP_DEMO_COMBINED/MP_DEMO_COMBINED.gen/sources_1/bd/design_1/ip/design_1_rgb565_to_grayscale_8_0_0/design_1_rgb565_to_grayscale_8_0_0/design_1_rgb565_to_grayscale_8_0_0_in_context.xdc] for cell 'design_1_i/rgb565_to_grayscale_8_0'
+Finished Parsing XDC File [c:/Users/harun/Documents/MP/MP_DEMO_COMBINED/MP_DEMO_COMBINED.gen/sources_1/bd/design_1/ip/design_1_rgb565_to_grayscale_8_0_0/design_1_rgb565_to_grayscale_8_0_0/design_1_rgb565_to_grayscale_8_0_0_in_context.xdc] for cell 'design_1_i/rgb565_to_grayscale_8_0'
+Parsing XDC File [c:/Users/harun/Documents/MP/MP_DEMO_COMBINED/MP_DEMO_COMBINED.gen/sources_1/bd/design_1/ip/design_1_memory_writer_0_0/design_1_memory_writer_0_0/design_1_memory_writer_0_0_in_context.xdc] for cell 'design_1_i/memory_writer_0'
+Finished Parsing XDC File [c:/Users/harun/Documents/MP/MP_DEMO_COMBINED/MP_DEMO_COMBINED.gen/sources_1/bd/design_1/ip/design_1_memory_writer_0_0/design_1_memory_writer_0_0/design_1_memory_writer_0_0_in_context.xdc] for cell 'design_1_i/memory_writer_0'
+Parsing XDC File [c:/Users/harun/Documents/MP/MP_DEMO_COMBINED/MP_DEMO_COMBINED.gen/sources_1/bd/design_1/ip/design_1_blk_mem_gen_0_0/design_1_blk_mem_gen_0_0/design_1_blk_mem_gen_0_0_in_context.xdc] for cell 'design_1_i/bram_hdmi_48'
+Finished Parsing XDC File [c:/Users/harun/Documents/MP/MP_DEMO_COMBINED/MP_DEMO_COMBINED.gen/sources_1/bd/design_1/ip/design_1_blk_mem_gen_0_0/design_1_blk_mem_gen_0_0/design_1_blk_mem_gen_0_0_in_context.xdc] for cell 'design_1_i/bram_hdmi_48'
+Parsing XDC File [c:/Users/harun/Documents/MP/MP_DEMO_COMBINED/MP_DEMO_COMBINED.gen/sources_1/bd/design_1/ip/design_1_smoothing_0_0/design_1_smoothing_0_0/design_1_smoothing_0_0_in_context.xdc] for cell 'design_1_i/smoothing_0'
+Finished Parsing XDC File [c:/Users/harun/Documents/MP/MP_DEMO_COMBINED/MP_DEMO_COMBINED.gen/sources_1/bd/design_1/ip/design_1_smoothing_0_0/design_1_smoothing_0_0/design_1_smoothing_0_0_in_context.xdc] for cell 'design_1_i/smoothing_0'
+Parsing XDC File [c:/Users/harun/Documents/MP/MP_DEMO_COMBINED/MP_DEMO_COMBINED.gen/sources_1/bd/design_1/ip/design_1_blk_mem_gen_0_1/design_1_blk_mem_gen_0_1/design_1_blk_mem_gen_0_0_in_context.xdc] for cell 'design_1_i/image_7'
+Finished Parsing XDC File [c:/Users/harun/Documents/MP/MP_DEMO_COMBINED/MP_DEMO_COMBINED.gen/sources_1/bd/design_1/ip/design_1_blk_mem_gen_0_1/design_1_blk_mem_gen_0_1/design_1_blk_mem_gen_0_0_in_context.xdc] for cell 'design_1_i/image_7'
+Parsing XDC File [C:/Users/harun/Documents/MP/MP_DEMO_SRC/pynq_z2.xdc]
+WARNING: [Constraints 18-619] A clock with name 'sys_clk' already exists, overwriting the previous clock with the same name. [C:/Users/harun/Documents/MP/MP_DEMO_SRC/pynq_z2.xdc:10]
+WARNING: [Vivado 12-507] No nets matched 'cam_pclk_IBUF'. [C:/Users/harun/Documents/MP/MP_DEMO_SRC/pynq_z2.xdc:55]
+Finished Parsing XDC File [C:/Users/harun/Documents/MP/MP_DEMO_SRC/pynq_z2.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/Users/harun/Documents/MP/MP_DEMO_SRC/pynq_z2.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/design_1_wrapper_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/harun/Documents/MP/MP_DEMO_SRC/pynq_z2.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Users/harun/Documents/MP/MP_DEMO_COMBINED/MP_DEMO_COMBINED.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/harun/Documents/MP/MP_DEMO_COMBINED/MP_DEMO_COMBINED.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1445.875 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1445.875 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'design_1_i/bram_hdmi_48' at clock pin 'clkb' is different from the actual clock period '13.468', this can lead to different synthesis results.
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1445.875 ; gain = 665.750
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1445.875 ; gain = 665.750
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1445.875 ; gain = 665.750
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1445.875 ; gain = 665.750
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1450.562 ; gain = 670.438
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-565] redefining clock 'sys_clk'
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1622.543 ; gain = 842.418
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1622.543 ; gain = 842.418
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1632.133 ; gain = 852.008
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 1881.840 ; gain = 1101.715
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 1881.840 ; gain = 1101.715
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 1881.840 ; gain = 1101.715
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 1881.840 ; gain = 1101.715
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 1881.840 ; gain = 1101.715
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 1881.840 ; gain = 1101.715
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+-----------------------------------+----------+
+|      |BlackBox name                      |Instances |
++------+-----------------------------------+----------+
+|1     |design_1_blk_mem_gen_0_0           |         1|
+|2     |design_1_blk_mem_gen_0_1           |         1|
+|3     |design_1_memory_writer_0_0         |         1|
+|4     |design_1_rgb565_to_grayscale_8_0_0 |         1|
+|5     |design_1_smoothing_0_0             |         1|
+|6     |design_1_top_0_0                   |         1|
++------+-----------------------------------+----------+
+
+Report Cell Usage: 
++------+---------------------------------+------+
+|      |Cell                             |Count |
++------+---------------------------------+------+
+|1     |design_1_blk_mem_gen_0           |     2|
+|3     |design_1_memory_writer_0         |     1|
+|4     |design_1_rgb565_to_grayscale_8_0 |     1|
+|5     |design_1_smoothing_0             |     1|
+|6     |design_1_top_0                   |     1|
+|7     |IBUF                             |    12|
+|8     |OBUF                             |     9|
++------+---------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 1881.840 ; gain = 1101.715
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:20 ; elapsed = 00:00:29 . Memory (MB): peak = 1881.840 ; gain = 1101.715
+Synthesis Optimization Complete : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 1881.840 ; gain = 1101.715
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1890.926 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1894.590 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: fc02a3f0
+INFO: [Common 17-83] Releasing license: Synthesis
+38 Infos, 10 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:34 ; elapsed = 00:00:39 . Memory (MB): peak = 1894.590 ; gain = 1346.258
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1894.590 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/harun/Documents/MP/MP_DEMO_COMBINED/MP_DEMO_COMBINED.runs/synth_1/design_1_wrapper.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file design_1_wrapper_utilization_synth.rpt -pb design_1_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu May  7 04:40:42 2026...
